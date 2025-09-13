@@ -1,4 +1,4 @@
-// JavaScript for interactions and AOS initialization
+// JavaScript para interações e inicialização do AOS
 document.addEventListener('DOMContentLoaded', () => {
     AOS.init({
         duration: 1000,
@@ -9,44 +9,60 @@ document.addEventListener('DOMContentLoaded', () => {
     const navList = document.getElementById('nav-list');
     const navLinks = navList.querySelectorAll('a');
 
-    // Toggle mobile navigation menu
+    // Alterna o menu de navegação móvel
     menuToggle.addEventListener('click', () => {
         navList.classList.toggle('active');
     });
 
-    // Close mobile menu when a link is clicked
+    // Fecha o menu móvel quando um link é clicado
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             navList.classList.remove('active');
         });
     });
 
-    // Handle contact form submission
+    // Manipula o envio do formulário de contato usando Fetch API
     const contactForm = document.getElementById('contact-form');
     const formMessage = document.getElementById('form-message');
 
-    contactForm.addEventListener('submit', (event) => {
-        event.preventDefault();
+    contactForm.addEventListener('submit', async (event) => {
+        event.preventDefault(); // Impede o envio padrão do formulário
 
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
+        const form = event.target;
+        const formData = new FormData(form);
 
-        if (name && email && message) {
-            // Simulate successful submission
-            formMessage.textContent = 'Mensagem enviada com sucesso!';
-            formMessage.classList.remove('hidden', 'error');
-            formMessage.classList.add('success');
-            contactForm.reset();
+        try {
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
 
+            if (response.ok) {
+                formMessage.textContent = 'Mensagem enviada com sucesso!';
+                formMessage.classList.remove('hidden', 'error');
+                formMessage.classList.add('success');
+                form.reset();
+            } else {
+                const data = await response.json();
+                if (data.errors) {
+                    formMessage.textContent = data.errors.map(e => e.message).join(", ");
+                } else {
+                    formMessage.textContent = 'Ocorreu um erro. Por favor, tente novamente.';
+                }
+                formMessage.classList.remove('hidden', 'success');
+                formMessage.classList.add('error');
+            }
+        } catch (error) {
+            formMessage.textContent = 'Falha ao enviar a mensagem. Verifique sua conexão e tente novamente.';
+            formMessage.classList.remove('hidden', 'success');
+            formMessage.classList.add('error');
+        } finally {
             setTimeout(() => {
                 formMessage.classList.add('hidden');
             }, 5000);
-        } else {
-            // Show error if form is incomplete
-            formMessage.textContent = 'Por favor, preencha todos os campos.';
-            formMessage.classList.remove('hidden', 'success');
-            formMessage.classList.add('error');
         }
     });
 });
