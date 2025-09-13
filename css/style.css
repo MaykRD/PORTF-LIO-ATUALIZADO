@@ -165,7 +165,7 @@ nav ul li a:hover::after {
     font-size: clamp(1rem, 2vw, 1.4rem);
     color: var(--text-secondary);
     margin-top: 10px;
-    animation: fadeIn 1.3s ease-out;
+    animation: fadeIn 1.2s ease-out;
 }
 
 .cta-button {
