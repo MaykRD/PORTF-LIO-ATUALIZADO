@@ -22,18 +22,16 @@ O objetivo deste projeto é apresentar as habilidades, experiências e projetos 
 ## Como Visualizar
 O portfólio está hospedado online e pode ser acedido através do seguinte link:  
 
-[🔗 Acessar Portfólio](#)  
+[🔗 Acessar Portfólio](https://portfolio-mayk-rodrigues.netlify.app/)  
 
-> Substitua `#` pelo link real do seu portfólio online.
 
 ## Autor
 **Mayk Rodrigues**
 
 Conecte-se comigo:  
-- [GitHub](https://github.com/)  
-- [LinkedIn](https://www.linkedin.com/)  
+- [GitHub](https://github.com/MaykRD)  
+- [LinkedIn](https://www.linkedin.com/in/mayk-rodrigues-b49288324/)  
 
-> Substitua os links acima pelos seus links reais.
 
 ## Licença
 Este projeto está licenciado sob a **Licença MIT**.  
