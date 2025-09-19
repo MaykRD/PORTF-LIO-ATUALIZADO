@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/20Ld/u02s5rWw8eB0zT+G5+y0G5l+XhY0YxG3s5qP7k5h+d0g5/h5c5fG5/kG5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -25,7 +27,17 @@
                 <span></span>
                 <span></span>
             </div>
+            
+            <div class="theme-switch-wrapper">
+                <i class="fas fa-sun"></i>
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
         </nav>
+        
     </header>
 
     <main>
@@ -44,7 +56,7 @@
             <div class="about-content">
                 <div>
                     <p>Olá! Meu nome é Mayk Rodrigues.
-                     Tenho paixão por tecnologia e desenvolvo habilidades em HTML, CSS e JavaScript para criar e manter soluções web.</p>
+                    Tenho paixão por tecnologia e desenvolvo habilidades em HTML, CSS e JavaScript para criar e manter soluções web.</p>
                     <p>Gosto de aprender rápido, aplicar raciocínio lógico para resolver problemas e usar ferramentas como Git e GitHub para organizar e colaborar em projetos.</p>
                 </div>
             </div>
@@ -60,32 +72,38 @@
                 </div>
                 <div class="skill-card">
                     <svg class="skill-icon"
-                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320 128C241 128 175.3 185.3 162.3 260.7C171.6 257.7 181.6 256 192 256L208 256C234.5 256 256 277.5 256 304L256 400C256 426.5 234.5 448 208 448L192 448C139 448 96 405 96 352L96 288C96 164.3 196.3 64 320 64C443.7 64 544 164.3 544 288L544 456.1C544 522.4 490.2 576.1 423.9 576.1L336 576L304 576C277.5 576 256 554.5 256 528C256 501.5 277.5 480 304 480L336 480C362.5 480 384 501.5 384 528L384 528L424 528C463.8 528 496 495.8 496 456L496 435.1C481.9 443.3 465.5 447.9 448 447.9L432 447.9C405.5 447.9 384 426.4 384 399.9L384 303.9C384 277.4 405.5 255.9 432 255.9L448 255.9C458.4 255.9 468.3 257.5 477.7 260.6C464.7 185.3 399.1 127.9 320 127.9z"/></svg>
+                         xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320 128C241 128 175.3 185.3 162.3 260.7C171.6 257.7 181.6 256 192 256L208 256C234.5 256 256 277.5 256 304L256 400C256 426.5 234.5 448 208 448L192 448C139 448 96 405 96 352L96 288C96 164.3 196.3 64 320 64C443.7 64 544 164.3 544 288L544 456.1C544 522.4 490.2 576.1 423.9 576.1L336 576L304 576C277.5 576 256 554.5 256 528C256 501.5 277.5 480 304 480L336 480C362.5 480 384 501.5 384 528L384 528L424 528C463.8 528 496 495.8 496 456L496 435.1C481.9 443.3 465.5 447.9 448 447.9L432 447.9C405.5 447.9 384 426.4 384 399.9L384 303.9C384 277.4 405.5 255.9 432 255.9L448 255.9C458.4 255.9 468.3 257.5 477.7 260.6C464.7 185.3 399.1 127.9 320 127.9z"/></svg>
                     <span>Suporte TI</span>
                 </div>
                 <div class="skill-card">
                     <svg class="skill-icon"
                       xmlns="http://www.w3.org/2000/svg"  fill="currentColor" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M280.3 222.4L201 222.4C161 211.9 70.5 214.6 70.5 297.2C70.5 327.3 85.5 348.4 105.5 358.2C80.4 381.2 68.5 392 68.5 407.4C68.5 418.4 73 428.5 86.4 434.2C72.1 447.6 64 457.3 64 475.6C64 507.7 92 526.4 165.6 526.4C236.4 526.4 277.4 500 277.4 453.2C277.4 394.5 232.2 396.7 125.8 390.2L139.2 368.6C166.5 376.2 257.9 378.6 257.9 300.7C257.9 282 250.2 269 242.9 259.6L280.3 256.8L280.3 222.3zM216.9 464.3C216.9 496.4 112 496.4 112 466.7C112 458.6 117.3 451.7 122.6 445.2C200.3 450.5 216.9 448.6 216.9 464.3zM166.1 329.7C113.3 329.7 115.6 258.5 167.3 258.5C216.8 258.5 218.1 329.7 166.1 329.7zM299.4 430.2L299.4 398.1C326.1 394.4 326.6 396.1 326.6 387.1L326.6 267.6C326.6 259.1 324.5 260.2 299.4 251.3L303.9 218.4L388.1 218.4L388.1 387.1C388.1 393.6 388.5 394.4 394.6 395.2L415.3 398L415.3 430.1L299.4 430.1zM351.9 185.9C328.7 185.9 315.3 172.5 315.3 149.3C315.3 126.1 328.7 113.5 351.9 113.5C375.5 113.5 388.9 126.1 388.9 149.3C388.9 172.5 375.5 185.9 351.9 185.9zM576 414.5C558.5 423 532.9 430.8 509.7 430.8C461.3 430.8 443 411.3 443 365.3L443 258.8C443 253.4 444 254.7 411.3 254.7L411.3 218.5C447.1 214.4 461.3 196.5 465.8 152.2L504.4 152.2C504.4 218 503.1 214 507.7 214L565 214L565 254.6L504.4 254.6L504.4 351.7C504.4 358.6 499.5 403.1 565 378.5L576 414.3z"/></svg>
-                    </svg>
                     <span>Git</span>
                 </div>
                 <div class="skill-card">
                     <svg class="skill-icon"
-                         xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M128 96L162.9 491.8L319.5 544L477.1 491.8L512 96L128 96zM436.2 223.9L252.4 223.9L256.5 273.3L432.1 273.3L418.5 421.7L320.6 448.7L320.6 449L319.5 449L220.8 421.7L214.8 345.9L262.5 345.9L266 384L319.5 398.5L373.2 384L379.2 321.8L212.3 321.8L199.5 176.2L440.6 176.2L436.2 223.9z"/></svg>
-                    </svg>
+                             xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M128 96L162.9 491.8L319.5 544L477.1 491.8L512 96L128 96zM436.2 223.9L252.4 223.9L256.5 273.3L432.1 273.3L418.5 421.7L320.6 448.7L320.6 449L319.5 449L220.8 421.7L214.8 345.9L262.5 345.9L266 384L319.5 398.5L373.2 384L379.2 321.8L212.3 321.8L199.5 176.2L440.6 176.2L436.2 223.9z"/></svg>
                     <span>HTML5</span>
                 </div>
                 <div class="skill-card">
                     <svg class="skill-icon" 
-                         xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M128 96L162.9 491.8L320 544L477.1 491.8L512 96L128 96zM441.1 176L436.3 223.3L321 272.6L320.7 272.7L432.2 272.7L419.4 419.3L321.2 448L222.4 418.8L216 344.9L264.9 344.9L268.1 383.2L320.7 396.5L375.4 381.1L379.1 319.5L212.8 319L212.8 318.9L212.6 319L209 272.7L321.1 226L327.6 223.3L204.7 223.3L198.9 176L441.1 176z"/></svg>
-                    </svg>
+                             xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M128 96L162.9 491.8L320 544L477.1 491.8L512 96L128 96zM441.1 176L436.3 223.3L321 272.6L320.7 272.7L432.2 272.7L419.4 419.3L321.2 448L222.4 418.8L216 344.9L264.9 344.9L268.1 383.2L320.7 396.5L375.4 381.1L379.1 319.5L212.8 319L212.8 318.9L212.6 319L209 272.7L321.1 226L327.6 223.3L204.7 223.3L198.9 176L441.1 176z"/></svg>
                     <span>CSS3</span>
                 </div>
                 <div class="skill-card">
                     <svg class="skill-icon"
-                         xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M96 96L96 544L544 544L544 96L96 96zM339.8 445.4C339.8 489 314.2 508.9 276.9 508.9C243.2 508.9 223.7 491.5 213.7 470.4L248 449.7C254.6 461.4 260.6 471.3 275.1 471.3C288.9 471.3 297.7 465.9 297.7 444.8L297.7 301.7L339.8 301.7L339.8 445.4zM439.4 508.9C400.3 508.9 375 490.3 362.7 465.9L397 446.1C406 460.8 417.8 471.7 438.5 471.7C455.9 471.7 467.1 463 467.1 450.9C467.1 436.5 455.7 431.4 436.4 422.9L425.9 418.4C395.5 405.5 375.4 389.2 375.4 354.9C375.4 323.3 399.5 299.3 437 299.3C463.8 299.3 483 308.6 496.8 333L464 354C456.8 341.1 449 336 436.9 336C424.6 336 416.8 343.8 416.8 354C416.8 366.6 424.6 371.7 442.7 379.6L453.2 384.1C489 399.4 509.1 415.1 509.1 450.3C509.1 488.1 479.3 508.9 439.4 508.9z"/></svg>
-                    </svg>
+                             xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M96 96L96 544L544 544L544 96L96 96zM339.8 445.4C339.8 489 314.2 508.9 276.9 508.9C243.2 508.9 223.7 491.5 213.7 470.4L248 449.7C254.6 461.4 260.6 471.3 275.1 471.3C288.9 471.3 297.7 465.9 297.7 444.8L297.7 301.7L339.8 301.7L339.8 445.4zM439.4 508.9C400.3 508.9 375 490.3 362.7 465.9L397 446.1C406 460.8 417.8 471.7 438.5 471.7C455.9 471.7 467.1 463 467.1 450.9C467.1 436.5 455.7 431.4 436.4 422.9L425.9 418.4C395.5 405.5 375.4 389.2 375.4 354.9C375.4 323.3 399.5 299.3 437 299.3C463.8 299.3 483 308.6 496.8 333L464 354C456.8 341.1 449 336 436.9 336C424.6 336 416.8 343.8 416.8 354C416.8 366.6 424.6 371.7 442.7 379.6L453.2 384.1C489 399.4 509.1 415.1 509.1 450.3C509.1 488.1 479.3 508.9 439.4 508.9z"/></svg>
                     <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <svg class="skill-icon"
+                         svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z"/></svg>
+                    <span>GitHub</span>
+                </div>
+                <div class="skill-card">
+                    <svg class="skill-icon"
+                         svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M32 183.4C12.9 172.4 0 151.7 0 128C0 92.7 28.7 64 64 64C87.7 64 108.4 76.9 119.4 96L328.5 96C339.6 76.9 360.2 64 383.9 64C419.2 64 447.9 92.7 447.9 128C447.9 151.7 435 172.4 415.9 183.4L415.9 296.5C435 307.6 447.9 328.2 447.9 351.9C447.9 387.2 419.2 415.9 383.9 415.9C360.2 415.9 339.5 403 328.5 383.9L119.4 383.9C108.3 403 87.7 415.9 64 415.9C28.7 415.9 0 387.2 0 351.9C0 328.2 12.9 307.5 32 296.5L32 183.4zM119.4 160C113.8 169.7 105.7 177.8 96 183.4L96 296.5C105.7 302.1 113.8 310.2 119.4 319.9L328.5 319.9C334.1 310.2 342.2 302.1 351.9 296.5L351.9 183.4C342.2 177.8 334.1 169.7 328.5 160L119.4 160zM544 343.4C534.3 337.8 526.2 329.7 520.6 320L491.4 320C486.1 302.3 476.6 286.5 464 273.6L464 256L520.6 256C531.7 236.9 552.3 224 576 224C611.3 224 640 252.7 640 288C640 311.7 627.1 332.4 608 343.4L608 456.5C627.1 467.6 640 488.2 640 511.9C640 547.2 611.3 575.9 576 575.9C552.3 575.9 531.6 563 520.6 543.9L311.5 543.9C300.4 563 279.8 575.9 256.1 575.9C220.8 575.9 192.1 547.2 192.1 511.9C192.1 488.2 205 467.5 224.1 456.5L224.1 431.9L288.1 431.9L288.1 456.5C297.8 462.1 305.9 470.2 311.5 479.9L520.6 479.9C526.2 470.2 534.3 462.1 544 456.5L544 343.4z"/></svg>
+                    <span>Tailwind CSS</span>
                 </div>
             </div>
         </section>
@@ -94,22 +112,23 @@
             <h2 class="section-title">Meus Projetos</h2>
             <div class="project-grid">
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                     <img src="/assets/Capturar.PNG" alt="Imagem do projeto Sistema de Tickets"  class="w-full h-auto rounded-lg mb-4"> 
+                    <img src="/assets/Capturar.PNG" alt="Imagem do projeto Sistema de Tickets"  class="w-full h-auto rounded-lg mb-4"> 
                     <h3>Sistema de Tickets(Front-end)</h3>
                     <p>Uma aplicação web para simular um sistema de abertura de tickets. Utiliza HTML, CSS e JavaScript para o front-end, demonstrando organização e lógica na resolução de problemas.</p>
                     <a href="https://sistema-de-tickets.netlify.app/" target="_blank" class="view-project">Ver projeto &rarr;</a>
                 </div>
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://placehold.co/600x400/E5E7EB/4B5563?text=Sistema+de+Tickets" alt="Imagem do projeto Central de Ajuda (Front-end)"  class="w-full h-auto rounded-lg mb-4"> 
+                    <img src="/assets/Capturar2.PNG" alt="Imagem do projeto Central de Ajuda (Front-end)"  class="w-full h-auto rounded-lg mb-4"> 
                     <h3>Central de Ajuda (Front-end)</h3>
                     <p>Uma interface web para uma base de conhecimento ou FAQ. O projeto foca em usabilidade e design limpo, permitindo que os usuários encontrem soluções de forma rápida e intuitiva.</p>
-                    <a href="#" class="view-project">Ver projeto &rarr;</a>
+                    <a href="https://central-de-ajuda.netlify.app/" target="_blank" class="view-project">Ver projeto &rarr;</a>
                 </div>
                 <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <img src="https://placehold.co/600x400/E5E7EB/4B5563?text=Sistema+de+Tickets" alt="Imagem do projeto Repositório de Scripts e Soluções"  class="w-full h-auto rounded-lg mb-4"> 
-                    <h3>Repositório de Scripts e Soluções</h3>
-                    <p>Um repositório no GitHub para armazenar e organizar scripts e pequenos trechos de código para automação e diagnóstico. Mostra meu domínio de Git e GitHub para gerenciar conhecimento.</p>
-                    <a href="#" class="view-project">Ver projeto &rarr;</a>
+                    <img src="/assets/Capturar3.PNG" alt="Imagem do projeto Repositório de Scripts e Soluções"  class="w-full h-auto rounded-lg mb-4"> 
+                    <h3>Formulário de Admissão / Demissão</h3>
+                    <p>About
+                    Esta aplicação web é uma ferramenta para gerenciar processos de admissão e demissão de RH. O projeto utiliza apenas HTML, CSS (com Tailwind CSS) e JavaScript para funcionar no navegador, salvando os dados no localStorage.</p>
+                    <a href="https://formulario-de-admissao-e-demissao.netlify.app/" target="_blank" class="view-project">Ver projeto &rarr;</a>
                 </div>
             </div>
         </section>
@@ -138,10 +157,11 @@
     <footer>
         <p>&copy; 2025 Mayk Rodrigues. Todos os direitos reservados.</p>
         <div class="social-links">
-            <a href="https://github.com/seu-usuario" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/seu-usuario" target="_blank">LinkedIn</a>
+            <a href="https://github.com/MaykRD" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/mayk-rodrigues-b49288324/" target="_blank">LinkedIn</a>
         </div>
     </footer>
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script src="/js/javascript.js" defer></script>
